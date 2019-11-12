@@ -219,7 +219,9 @@
         return `${this.month.getYear()}`
       },
       weekDays () {
-        return getWeekDays(this.locale, this.firstDayOfWeek)
+        const wd = getWeekDays(this.locale, this.firstDayOfWeek)
+        console.log(wd)
+        return wd
       }
     },
     methods: {
